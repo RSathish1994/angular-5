@@ -4,4 +4,9 @@
 	background-image: url('background_image.jpg');
 	background-size: 100%;
 }
-
+.float_right{
+	float:right;
+}
+.float_left{
+	float:left;
+}

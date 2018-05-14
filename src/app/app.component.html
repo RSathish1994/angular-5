@@ -1,33 +1,52 @@
 
 
-<div class="container ">
+<div class="container" >
   <div class="row">
     <div class="col-md-12">
-      <div class="jumbotron log-jum">
-        <h1 class="text-center text-danger">LOGIN </h1> 
+      <div class="jumbotron log-jum" [hidden]="viewlogin">
+        <h1 class="text-center log-text-danger">LOGIN </h1> 
         <form action="/action_page.php">
           <div class="form-group">
-            <label for="email">Email address:</label>
+            <label for="email">USER NAME:</label>
             <input type="email" class="form-control" id="email">
           </div>
           <div class="form-group">
-            <label for="pwd">Password:</label>
+            <label for="pwd">PASSWORD:</label>
             <input type="password" class="form-control" id="pwd">
           </div>
-          <div class="form-group form-check">
-            <label class="form-check-label ">
-              <input class="form-check-input" type="checkbox"> Remember my preference
-            </label>
+           <button type="submit" class="btn btn-block btn-primary">SIGN IN</button>
+           <button type="submit" (click)="signup()" class="btn btn-block btn-light">YOUR NEW ? SIGN UP </button>
+        </form>
+      </div>
+      <div class="jumbotron signup-jum" [hidden]="viewsignup">
+        <h1 class="text-center sign-text-info">SIGN UP </h1> 
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label>EMAIL :</label>
+            <input type="email" class="form-control" id="email">
+          </div>          
+          <div class="form-group">
+            <label>PHONE NUMBER :</label>
+            <input type="number" class="form-control" id="email">
+          </div>          
+          <div class="form-group">
+            <label>USER NAME :</label>
+            <input type="text" class="form-control" id="email">
           </div>
-          <div class="checkbox checkbox-success">
-              <input id="checkbox3" type="checkbox">
-              <label for="checkbox3">
-                  Success
-              </label>
+          <div class="form-group">
+            <label for="pwd">PASSWORD :</label>
+            <input type="password" class="form-control" id="pwd">
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="form-group">
+            <label for="pwd">RE-PASSWORD :</label>
+            <input type="password" class="form-control" id="pwd">
+          </div>
+           <button type="submit" class="btn btn-block btn-primary">SIGN UP</button>
+           <button type="submit" (click)="signin()" class="btn btn-block btn-light">EXISTING USER ? SIGN IN </button>
         </form>
       </div>
     </div>
   </div>
 </div>
+
+<main-dash></main-dash>
