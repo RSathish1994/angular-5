@@ -1,0 +1,17 @@
+.log-jum {
+	margin: 160px 250px !important;
+	height: 450px;
+	background-color: #fff;
+	border-radius: 0px;
+	box-shadow: 15px 15px 30px 0px #00000030;
+}
+.log-jum .form-control{
+	border-radius: 0px;
+}
+.text-danger {
+    color: #fba8a8!important;
+}
+.btn{
+	padding: .375rem 2rem;
+	border-radius: 0px;
+}
